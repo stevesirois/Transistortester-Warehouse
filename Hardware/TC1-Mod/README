@@ -1,0 +1,19 @@
+
+------------------------------------------------------------------------------
+
+  Modification for Multifunction Tester TC-1
+
+  (c) 2018 by Markus Reschke (madires@theca-tabellaria.de)
+
+------------------------------------------------------------------------------
+
+The TC-1 Transistor Tester clone uses an additional small MCU for controlling
+the power supply causing an incompatibilty with the open source k and
+m-firmware. This small circuit is meant to replace the control MCU U4 to
+be able to run the open source firmware. I'd recommend to glue the tiny
+PCB of the replacement circuit to the main PCB using hot glue, and to connect
+U4's pads with thin enamel wire (magnet wire). Please see the included
+pictures for an inspiration ;)
+
+PS: Remove the Li-Ion battery during the modifaction to prevent any damage.  
+

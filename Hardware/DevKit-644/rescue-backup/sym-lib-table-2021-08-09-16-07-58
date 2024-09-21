@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TesterPlus-rescue)(type Legacy)(uri ${KIPRJMOD}/TesterPlus-rescue.lib)(options "")(descr ""))
+)

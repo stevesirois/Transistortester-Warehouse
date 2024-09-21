@@ -1,0 +1,74 @@
+------------------------------------------------------------------------------
+
+  Component Tester Dev Kit with ATmega644/1284
+
+  (c) 2021 by Markus Reschke (madires@theca-tabellaria.de)
+
+------------------------------------------------------------------------------
+
+Last edit:  2021-08-09
+
+
+* About
+
+The Component Tester is based on the project of Markus Frejek [1&2] and the
+successor of Karl-Heinz Kübbeler [3&4].
+
+
+* Safety Advice
+
+The Component Tester is no DMM! It's a simple tester for components capable
+of measuring several things. The probes aren't protected in any way and
+won't survive higher voltages than 5V. Don't use the tester for live circuits!
+Just use it for unsoldered electronic components! If you test a capacitor make
+sure it's discharged before connecting the probes. This isn't just the Safety
+Sally, your life may be at risk if you connect the probes to a live circuit
+or a power supply (or even mains). 
+
+
+* What's in the box?
+
+Following files are in the archive:
+- this README
+- schematics as PDF
+- schematics and PCB layout in KiCad v5 format 
+
+
+* Circuit
+
+The circuit is meant as development kit for writing and testing firmware.
+It comes with the basic tester (without display) and:
+- weak input protection
+- 2.5 V voltage reference
+- rotary encoder
+- boost converter for Zener check
+- fixed self-adjustment cap
+- fixed cap and relay for k-firmware's SamplingADC
+- pin header for displays and hardware options
+
+
+* Layout
+
+The layout is optimized for home lab PCB production without through-hole
+plating. I recommend to use precision sockets for the ICs. They allow to solder
+the pins at the top layer without much trouble. You might need to grind the top
+layer pads for the crystal to prevent any short circuit of the leads via the
+metal case.
+
+
+* References
+
+[1] AVR-Transistortester, Markus Frejek,
+    Embedded Projects Journal, 2011-11
+
+[2] http://www.mikrocontroller.net/topic/131804
+    thread of Markus Frejek, Forum, 2009
+
+[3] http://www.mikrocontroller.net/articles/AVR-Transistortester
+    Online documentation of the Transistortester, Online Article, 2009-2011
+
+[4] http://www.mikrocontroller.net/articles/AVR_Transistortester
+    Short description of the TransistorTester, Karl-Heinz Kübbeler,
+    Online Article, 2012
+
+------------------------------------ EOF -------------------------------------
