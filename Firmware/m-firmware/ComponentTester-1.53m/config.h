@@ -36,7 +36,7 @@
  *    to match your rotary encoder
  */
 
-//#define HW_ENCODER
+#define HW_ENCODER
 
 
 /*
@@ -89,7 +89,7 @@
  *  - or use >= 5.5 digit DMM to measure the voltage
  */
 
-#define UREF_25           2495
+#define UREF_25           2585
 
 
 /*
@@ -292,7 +292,7 @@
  *  - uncomment to enable
  */
 
-//#define LC_METER_SHOW_FREQ
+#define LC_METER_SHOW_FREQ
 
 
 /*
@@ -393,7 +393,7 @@
  *  - uncomment to enable
  */
 
-#define SW_PWM_SIMPLE
+//#define SW_PWM_SIMPLE
 
 
 /*
@@ -458,7 +458,7 @@
  *  - uncomment to enable
  */
 
-#define SW_SQUAREWAVE
+//#define SW_SQUAREWAVE
 
 
 /*
@@ -468,7 +468,7 @@
  *  - uncomment to enable
  */
 
-#define SW_IR_RECEIVER
+//#define SW_IR_RECEIVER
 
 
 /*
@@ -546,7 +546,7 @@
  *  - uncomment to enable
  */
 
-#define SW_OPTO_COUPLER
+//#define SW_OPTO_COUPLER
 
 
 /*
@@ -623,7 +623,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_CAP_LEAKAGE
+#define SW_CAP_LEAKAGE
 
 
 /*
@@ -866,7 +866,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_COMMA
+#define UI_COMMA
 
 
 /*
@@ -885,7 +885,7 @@
  *  - uncomment to enable.
  */
 
-//#define UI_PREFIX
+#define UI_PREFIX
 
 
 /*
@@ -893,7 +893,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_HEX_UPPERCASE
+#define UI_HEX_UPPERCASE
 
 
 /*
@@ -902,7 +902,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_AUTOHOLD
+#define UI_AUTOHOLD
 
 
 /*
@@ -1016,7 +1016,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_PINOUT_ALT
+#define UI_PINOUT_ALT
 
 
 /*
@@ -1025,7 +1025,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_QUESTION_MARK
+#define UI_QUESTION_MARK
 
 
 /*
@@ -1034,7 +1034,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_ZENER_DIODE
+#define UI_ZENER_DIODE
 
 
 /*
@@ -1043,7 +1043,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_QUARTZ_CRYSTAL
+#define UI_QUARTZ_CRYSTAL
 
 
 /*
@@ -1080,7 +1080,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_BATTERY
+#define UI_BATTERY
 
 
 /*
@@ -1109,7 +1109,7 @@
  *    (COLOR_PROBE_1, COLOR_PROBE_2 and COLOR_PROBE_3)
  */
 
-#define UI_PROBE_COLORS
+//#define UI_PROBE_COLORS
 
 
 /*
@@ -1119,7 +1119,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_COLORED_TITLES
+#define UI_COLORED_TITLES
 
 
 /*
@@ -1140,7 +1140,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_COLORED_VALUES
+#define UI_COLORED_VALUES
 
 
 /*
@@ -1158,7 +1158,7 @@
  *  - uncomment to enable
  */
 
-//#define UI_MAINMENU_AUTOEXIT
+#define UI_MAINMENU_AUTOEXIT
 
 
 /*
@@ -1267,7 +1267,7 @@
  *  - uncomment one of the modes
  */
 
-//#define BAT_NONE
+//#define BAT_NONE /* SSI temporary*/
 //#define BAT_DIRECT
 #define BAT_DIVIDER
 
@@ -1364,7 +1364,8 @@
  */
 
 /* Rl in Ohms */
-#define R_LOW            680
+// #define R_LOW            680
+#define R_LOW            360
 
 /* Rh in Ohms */
 #define R_HIGH           470000

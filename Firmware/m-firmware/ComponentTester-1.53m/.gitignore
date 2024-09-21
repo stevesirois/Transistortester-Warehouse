@@ -1,0 +1,5 @@
+*.o
+dep/*.o.d
+ComponentTester
+ComponentTester.lss
+ComponentTester.map

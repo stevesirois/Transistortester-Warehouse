@@ -3,7 +3,7 @@
  *   main part
  *
  *   (c) 2012-2024 by Markus Reschke
- *   based on code from Markus Frejek and Karl-Heinz Kübbeler
+ *   based on code from Markus Frejek and Karl-Heinz Kï¿½bbeler
  *
  * ************************************************************************ */
 
@@ -273,7 +273,7 @@ void Show_ENormCodes(uint32_t Value, int8_t Scale, uint8_t ESeries, uint8_t Tole
    *  multiplier reference
    *  - R:   0 (10^0)   -> 1 Ohms
    *    C: -12 (10^-12) -> 1 pF
-   *    L:  -6 (10^-6)  -> 1 µH
+   *    L:  -6 (10^-6)  -> 1 ï¿½H
    *  - ref_scale as function argument?
    *    scale = scale - ref_scale
    */
@@ -1307,7 +1307,7 @@ void Show_BJT(void)
    *  B   - Collector pin
    *  C   - Emitter pin
    *  U_1 - U_BE (mV) (not implemented yet)
-   *  U_3 - I_C/I_E (µA)
+   *  U_3 - I_C/I_E (ï¿½A)
    *  F_1 - hFE
    *  F_2 - reverse hFE
    *  I_value/I_scale - I_CEO
@@ -1498,7 +1498,7 @@ void Show_BJT(void)
     /*
      *  V_f is quite linear for a logarithmicly scaled I_b.
      *  So we may interpolate the V_f values of low and high test current
-     *  measurements for a virtual test current. Low test current is 10µA
+     *  measurements for a virtual test current. Low test current is 10ï¿½A
      *  and high test current is 7mA. That's a logarithmic scale of
      *  3 decades.
      */
@@ -1957,7 +1957,7 @@ void Show_PUT(void)
    *  A   - Gate
    *  B   - Anode
    *  C   - Cathode
-   *  U_1 - V_f (mV)
+   *  U_1ï¿½- V_f (mV)
    *  U_2 - V_T (mV)
    *
    *  Mapping for Semi structure:
@@ -2157,7 +2157,7 @@ void PowerOff(void)
 
   /* power down */
   #ifdef POWER_SWITCH_SOFT
-  POWER_PORT &= ~(1 << POWER_CTRL);     /* power off myself: set pin low */
+  POWER_PORT = (1 << POWER_CTRL);     /* power off myself: set pin low */
     #ifdef PASSIVE_POWER_CTRL
     POWER_DDR |= (1 << POWER_CTRL);     /* set pin to output mode */
     #endif
@@ -2414,7 +2414,7 @@ int main(void)
     #else
       /* switch on power to keep me alive (standard way) */
       POWER_DDR = (1 << POWER_CTRL);        /* set pin as output */
-      POWER_PORT = (1 << POWER_CTRL);       /* set pin high to drive power management transistor */
+      POWER_PORT &= ~(1 << POWER_CTRL);       /* set pin high to drive power management transistor */
     #endif
   #endif
 
@@ -2530,7 +2530,7 @@ int main(void)
 
     /* power down */
     #ifdef POWER_SWITCH_SOFT
-      POWER_PORT &= ~(1 << POWER_CTRL);      /* power off myself: set pin low */
+      POWER_PORT = (1 << POWER_CTRL);      /* power off myself: set pin low */
       #ifdef PASSIVE_POWER_CTRL
       POWER_DDR |= (1 << POWER_CTRL);        /* set pin to output mode */
       #endif
