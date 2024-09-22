@@ -36,7 +36,7 @@
  *    to match your rotary encoder
  */
 
-#define HW_ENCODER
+//#define HW_ENCODER
 
 
 /*
@@ -68,7 +68,7 @@
  *  - uncomment to enable
  */
 
-//#define HW_INCDEC_KEYS
+#define HW_INCDEC_KEYS
 
 
 /*
@@ -80,7 +80,7 @@
  *    reference
  */
 
-//#define HW_REF25
+#define HW_REF25
 
 
 /*

@@ -960,8 +960,8 @@
 #define KEY_PORT         PORTD     /* port data register */
 #define KEY_DDR          DDRD      /* port data direction register */
 #define KEY_PIN          PIND      /* port input pins register */
-#define KEY_INC          PD2       /* increase push button (low active) */
-#define KEY_DEC          PD3       /* decrease push button (low active) */
+#define KEY_INC          PD5       /* increase push button (low active) */
+#define KEY_DEC          PD0       /* decrease push button (low active) */
 
 
 /*
