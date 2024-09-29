@@ -29,7 +29,7 @@ MCU = atmega328
 # - 8MHz  : 8
 # - 16MHz : 16
 # - 20MHz : 20
-FREQ = 16
+FREQ = 20
 
 # oscillator type
 # - internal RC oscillator      : RC

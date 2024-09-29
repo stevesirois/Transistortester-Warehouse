@@ -80,7 +80,7 @@
  *    reference
  */
 
-#define HW_REF25
+//#define HW_REF25
 
 
 /*
@@ -89,7 +89,7 @@
  *  - or use >= 5.5 digit DMM to measure the voltage
  */
 
-#define UREF_25           2585
+#define UREF_25           2675
 
 
 /*
@@ -1343,7 +1343,7 @@
  *  ADC voltage reference based on Vcc (in mV). 
  */
 
-#define UREF_VCC         5001
+#define UREF_VCC         5197
 
 
 /*
@@ -1364,8 +1364,7 @@
  */
 
 /* Rl in Ohms */
-// #define R_LOW            680
-#define R_LOW            360
+#define R_LOW            680
 
 /* Rh in Ohms */
 #define R_HIGH           470000
