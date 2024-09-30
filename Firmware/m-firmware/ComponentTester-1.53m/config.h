@@ -754,7 +754,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_DIODE_LED
+#define SW_DIODE_LED
 
 
 /*
@@ -1304,7 +1304,7 @@
  *  - Schottky diode about 200mV / PNP BJT about 100mV.
  */  
 
-#define BAT_OFFSET       290
+#define BAT_OFFSET       1
 
 
 /*
@@ -1313,7 +1313,7 @@
  *  - Voltage drop BAT_OFFSET is considered in calculation.
  */
 
-#define BAT_WEAK         7400
+#define BAT_WEAK         6000
 
 
 /*
@@ -1322,7 +1322,7 @@
  *  - Voltage drop BAT_OFFSET is considered in calculation.
  */
 
-#define BAT_LOW          6400 
+#define BAT_LOW          5650 
 
 
 /*
@@ -1343,7 +1343,7 @@
  *  ADC voltage reference based on Vcc (in mV). 
  */
 
-#define UREF_VCC         5197
+#define UREF_VCC         5006
 
 
 /*
