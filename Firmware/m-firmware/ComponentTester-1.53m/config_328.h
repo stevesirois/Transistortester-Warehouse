@@ -172,7 +172,7 @@
 #define LCD_PORT         PORTD          /* port data register */
 #define LCD_DDR          DDRD           /* port data direction register */
 #define LCD_RES          PD4            /* port pin used for /RES (optional) */
-#define LCD_CS           PD5            /* port pin used for /CS (optional) */
+//#define LCD_CS           PD5            /* port pin used for /CS (optional) */
 #define LCD_DC           PD3            /* port pin used for D/C */
 #define LCD_SCK          PD2            /* port pin used for SCK */
 #define LCD_SDI          PD1            /* port pin used for SDI (data input) */

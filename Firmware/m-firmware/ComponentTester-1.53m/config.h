@@ -1292,7 +1292,7 @@
  *  - standard values are: R1=10k, R2=3.3k
  */
 
-#define BAT_R1           10000
+#define BAT_R1           9911
 #define BAT_R2           3300
 
 
@@ -1304,7 +1304,7 @@
  *  - Schottky diode about 200mV / PNP BJT about 100mV.
  */  
 
-#define BAT_OFFSET       1
+#define BAT_OFFSET       400
 
 
 /*
@@ -1343,7 +1343,7 @@
  *  ADC voltage reference based on Vcc (in mV). 
  */
 
-#define UREF_VCC         5006
+#define UREF_VCC         5014
 
 
 /*
