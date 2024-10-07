@@ -86,7 +86,12 @@ PARTNO = m328p
 # Diamex ALL-AVR/AVR-Prog
 PROGRAMMER = avrispmkII
 PORT = usb
-OPTIONS = -B 1.0
+OPTIONS = -B 5
+#OPTIONS = -B 1.0
+# IMPORTANT!!!! The original parameter (1.0 usec.) was too fast to talk to
+# brand new atmega328 chip who run at 8MHZ internal clock
+# I was getting a lot of "Device signature = 0x000000 (retrying)" or random signature
+# or also "Yikes! Invalid device signature". Thanks to Love Aurell video on YT
 
 # Pololu USB AVR Programmer
 #PROGRAMMER = stk500v2

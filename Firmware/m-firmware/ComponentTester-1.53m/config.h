@@ -1267,7 +1267,7 @@
  *  - uncomment one of the modes
  */
 
-//#define BAT_NONE /* SSI temporary*/
+//#define BAT_NONE
 //#define BAT_DIRECT
 #define BAT_DIVIDER
 
