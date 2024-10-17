@@ -1292,8 +1292,8 @@
  *  - standard values are: R1=10k, R2=3.3k
  */
 
-#define BAT_R1           9911
-#define BAT_R2           3300
+#define BAT_R1           9891
+#define BAT_R2           3289
 
 
 /*
